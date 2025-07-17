@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
-  background: #f4f4f4;
+  font-family: winky-rough;
+  background: #dbb2d8;
   padding: 20px;
 }
 
@@ -14,8 +14,8 @@ body {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 10px;
-  width: 200px;
-  background: white;
+  width: 250px;
+  background: #e9d6f2;
 }
 
 .semestre h2 {
@@ -27,6 +27,12 @@ body {
   padding: 8px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 13px;
+  background-color: #d8b4e2; /* morado pastel */
+  transition: transform 0.1s ease;
+}
+.ramo:hover {
+  transform: scale(1.02);
 }
 
 .ramo.locked {
@@ -36,15 +42,15 @@ body {
 }
 
 .ramo.available {
-  background: #ffeb3b;
+  background: #d8b4e2;
 }
 
 .ramo.approved {
-  background: #4caf50;
+  background: #d8b4e2;
   color: white;
 }
 
 .ramo.corequisite {
-  border: 2px dashed #2196f3;
+  border: 2px dashed #d8b4e2;
 }
 
