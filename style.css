@@ -1,5 +1,5 @@
 body {
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #dbb2d8;
   padding: 20px;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .semestre h2 {
-  margin-top:0;
+  margin-top: 0;
   font-size: 14px;
   color: #4a0072;
 }
@@ -30,9 +30,10 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
-  background-color: #d8b4e2; /* morado pastel */
+  background-color: #d8b4e2;
   transition: transform 0.1s ease;
 }
+
 .ramo:hover {
   transform: scale(1.02);
 }
@@ -44,11 +45,11 @@ body {
 }
 
 .ramo.available {
-  background: #d8b4e2; /* morado pastel */
+  background: #d8b4e2;
 }
 
 .ramo.approved {
-  background: #a05cb7; /* morado fuerte */
+  background: #a05cb7;
   color: white;
 }
 
