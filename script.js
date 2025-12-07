@@ -92,7 +92,7 @@ const ramos = [
   },
   {
     "codigo": "DPT6351",
-    "nombre": "Hidrogimnasia",
+    "nombre": "Deportivo 1",
     "semestre": 3,
     "prerreq": [],
     "correq": []
@@ -126,10 +126,10 @@ const ramos = [
     "correq": ["MAT1620"]
   },
   {
-    "codigo": "IIC1253",
-    "nombre": "Matemáticas Discretas",
+    "codigo": "EYP1113",
+    "nombre": "Probabilidad y Estadística",
     "semestre": 4,
-    "prerreq": ["MAT1203"],
+    "prerreq": ["MAT1630"],
     "correq": []
   },
   {
@@ -140,10 +140,10 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "IIC2233",
-    "nombre": "Programación Avanzada",
+    "codigo": "ICS1113",
+    "nombre": "Optimización",
     "semestre": 4,
-    "prerreq": ["IIC1103"],
+    "prerreq": ["IIC1103","MAT1203","MAT1620"],
     "correq": []
   },
   {
@@ -161,24 +161,24 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "EYP1113",
-    "nombre": "Probabilidad y Estadística",
+    "codigo": "ICS2121",
+    "nombre": "Métodos de Optimización",
     "semestre": 5,
-    "prerreq": ["MAT1630"],
+    "prerreq": ["ICS1113","MAT1630"],
     "correq": []
   },
   {
-    "codigo": "OPT-FING",
-    "nombre": "Optativo Fundamentos de Ingeniería",
+    "codigo": "ICS2523",
+    "nombre": "Microeconomía",
     "semestre": 5,
-    "prerreq": [],
+    "prerreq": ["ICS1113","ICS1513"],
     "correq": []
   },
   {
-    "codigo": "IIC2133",
-    "nombre": "Estructura de Datos y Algoritmos",
+    "codigo": "ICS2123",
+    "nombre": "Modelos Estocásticos",
     "semestre": 5,
-    "prerreq": ["IIC2233", "IIC1253"],
+    "prerreq": ["ICS1113", "EYP1113"],
     "correq": []
   },
   {
@@ -189,24 +189,24 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "ICS1113",
-    "nombre": "Optimización",
+    "codigo": "IIQ2930",
+    "nombre": "Introducción a la Ingeniería Gastronómica",
     "semestre": 6,
-    "prerreq": ["MAT1620", "MAT1203"],
+    "prerreq": ["FIS1523"],
     "correq": []
   },
   {
-    "codigo": "IIC2613",
-    "nombre": "Inteligencia Artificial",
+    "codigo": "ICS2563",
+    "nombre": "Econometría Aplicada",
     "semestre": 6,
-    "prerreq": ["IIC2233", "EYP1113"],
+    "prerreq": ["EYP1113"],
     "correq": []
   },
   {
-    "codigo": "IIC2413",
-    "nombre": "Bases de Datos",
+    "codigo": "ICS2813",
+    "nombre": "Organización y comportamiento en la Empresa",
     "semestre": 6,
-    "prerreq": ["IIC2233"],
+    "prerreq": [],
     "correq": []
   },
   {
@@ -224,31 +224,31 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "IIC2143",
-    "nombre": "Ingeniería de Software",
+    "codigo": "ICS2613",
+    "nombre": "contabilidad y control de gestión",
     "semestre": 7,
-    "prerreq": ["IIC2413"],
+    "prerreq": [],
     "correq": []
   },
   {
-    "codigo": "IIC2343",
-    "nombre": "Arquitectura de Computadores",
+    "codigo": "ICS2122",
+    "nombre": "Capstone",
     "semestre": 7,
-    "prerreq": [],
-    "correq": ["IIC2233"]
+    "prerreq": ["ICS2121","ICS2123","ICS2563"],
+    "correq": ["ICS2613","ICS2813"]
   },
   {
-    "codigo": "ICS2121",
-    "nombre": "Métodos de Optimización",
+    "codigo": "ICS3151",
+    "nombre": "Optimización Bajo Incertidumbre",
     "semestre": 7,
     "prerreq": ["ICS1113"],
     "correq": []
   },
   {
-    "codigo": "ICS2523",
-    "nombre": "Microeconomía",
+    "codigo": "IIC2233",
+    "nombre": "Programación Avanzada",
     "semestre": 7,
-    "prerreq": ["ICS1513", "ICS1113"],
+    "prerreq": ["IIC1103"],
     "correq": []
   },
   {
@@ -259,66 +259,66 @@ const ramos = [
     "correq": []
   },
   {
+    "codigo": "IIC1253",
+    "nombre": "Matemáticas Discretas",
+    "semestre": 8,
+    "prerreq": ["MAT1203"],
+    "correq": []
+  },
+  {
     "codigo": "IIC2513",
     "nombre": "Tecnología y Aplicaciones Web",
     "semestre": 8,
-    "prerreq": ["IIC2143"],
+    "prerreq": ["ICS2122"],
     "correq": []
   },
   {
-    "codigo": "IIC2333",
-    "nombre": "Sistemas Operativos y Redes",
+    "codigo": "IIC2133",
+    "nombre": "Estructura de Datos y Algoritmos",
     "semestre": 8,
-    "prerreq": ["IIC2343"],
+    "prerreq": ["ICS2122"],
     "correq": []
   },
   {
-    "codigo": "ICS2123",
-    "nombre": "Modelos Estocásticos",
+    "codigo": "IIC2143",
+    "nombre": "Ingeniería de Software",
     "semestre": 8,
-    "prerreq": ["EYP1113", "ICS1113"],
+    "prerreq": ["ICS2122"],
     "correq": []
   },
   {
-    "codigo": "ICS2813",
-    "nombre": "Organización y Comportamiento de la Empresa",
+    "codigo": "IIC2413",
+    "nombre": "Bases de Datos",
     "semestre": 8,
-    "prerreq": [],
+    "prerreq": ["ICS2122"],
     "correq": []
   },
   {
-    "codigo": "ELECT-ART",
-    "nombre": "Electivo Artes",
-    "semestre": 8,
-    "prerreq": [],
-    "correq": []
-  },
-  {
-    "codigo": "IIC2154",
-    "nombre": "Proyecto de Especialidad",
+    "codigo": "IIC3113",
+    "nombre": "Gestión de Proyectos",
     "semestre": 9,
-    "prerreq": ["IIC2143", "IIC2513", "IIC2613"],
+    "prerreq": ["ICS2122"],
     "correq": []
+  },
+  {
+    "codigo": "ICS3413",
+    "nombre": "Finanzas",
+    "semestre": 9,
+    "prerreq": ["ICS2613"],
+    "correq": []
+  },
+  {
+    "codigo": "IIC3745",
+    "nombre": "Testing",
+    "semestre": 9,
+    "prerreq": [],
+    "correq": ["ICS2122"]
   },
   {
     "codigo": "IIC3585",
     "nombre": "Diseño Avanzado de Aplicaciones Web",
     "semestre": 9,
-    "prerreq": ["IIC2233", "IIC2413"],
-    "correq": []
-  },
-  {
-    "codigo": "IIC3113",
-    "nombre": "Gestión de Proyectos de TI",
-    "semestre": 9,
-    "prerreq": [],
-    "correq": ["IIC2154"]
-  },
-  {
-    "codigo": "ICS2613",
-    "nombre": "Contabilidad y Control de Gestión",
-    "semestre": 9,
-    "prerreq": [],
+    "prerreq": ["IIC2233","IIC2413","IIC2513"],
     "correq": []
   },
   {
@@ -343,8 +343,8 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "IIC3745",
-    "nombre": "Testing",
+    "codigo": "IIC2173",
+    "nombre": "Arquitectura de Sistemas de Software",
     "semestre": 10,
     "prerreq": ["IIC2143"],
     "correq": []
@@ -357,17 +357,10 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "ICS3413",
-    "nombre": "Finanzas",
+    "codigo": "ICS3213",
+    "nombre": "Gestión de Operaciones",
     "semestre": 10,
-    "prerreq": ["ICS2613"],
-    "correq": []
-  },
-  {
-    "codigo": "IIC2173",
-    "nombre": "Arquitectura de Sistemas de Software",
-    "semestre": 11,
-    "prerreq": ["IIC2143"],
+    "prerreq": ["ICS2123"],
     "correq": []
   },
   {
@@ -378,10 +371,10 @@ const ramos = [
     "correq": []
   },
   {
-    "codigo": "ICS3213",
-    "nombre": "Gestión de Operaciones",
+    "codigo": "ICS3724",
+    "nombre": "Economía y Política Ambiental",
     "semestre": 11,
-    "prerreq": ["ICS2123"],
+    "prerreq": [],
     "correq": []
   },
   {
